@@ -1,0 +1,101 @@
+/* variables */
+:root {
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+}
+/* variables */
+/* global rules */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: hsl(0, 0%, 95%);
+}
+/* global rules */
+/* start main */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 305px);
+    grid-template-rows: 500px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+section {
+    padding: 50px;
+}
+section h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+}
+section p {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.75;
+}
+section button {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    bottom: -55px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+/* end main */
+/* start st */
+.st {
+    background-color: var(--Bright_orange);
+}
+.st button:hover {
+    color: var(--Bright_orange);
+}
+/* end st */
+/* start st */
+.nd {
+    background-color: var(--Dark_cyan);
+}
+.nd button:hover {
+    color: var(--Dark_cyan);
+}
+/* end st */
+/* start st */
+.rd {
+    background-color: var(--Very_dark_cyan);
+}
+.rd button:hover {
+    color: var(--Very_dark_cyan);
+}
+/* end st */
+/* start media query */
+@media only screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+    main {
+        grid-template-columns: 305px;
+        grid-template-rows: repeat(3, 500px);
+    }
+}
+/* end media query */
