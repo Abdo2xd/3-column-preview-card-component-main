@@ -30,6 +30,7 @@ main {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     overflow: hidden;
+    margin-top: 15px;
 }
 section {
     padding: 50px;
